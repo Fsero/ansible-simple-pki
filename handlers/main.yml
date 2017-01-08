@@ -27,4 +27,4 @@
          -crl_reason unspecified ; fi
     executable=/bin/bash
   notify: [create crls]
-  with_items: simplepki_revocation_list
+  with_items: "{{simplepki_revocation_list}}"
